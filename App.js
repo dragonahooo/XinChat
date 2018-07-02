@@ -52,19 +52,3 @@ const css = StyleSheet.create({
 
   tabbar: { backgroundColor:Colors.WHITE, borderTopColor:Colors.WHITE_GRAY},
 })
-
-
-
-
-
-//custom components
-// class CustomTabIcon extends Component {
-//   render(){
-//       var color = this.props.focused ? Colors.BTN_FOCUSED : Colors.BTN_UNFOCUSED;
-//       return(
-//         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center'}}>
-//           <CIcon color={color} name={this.props.iconName} size={this.props.iconName == 'chat-message' ? 34 : 30}/>
-//         </View>
-//       );
-//     }
-// }
