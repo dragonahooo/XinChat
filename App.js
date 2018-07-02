@@ -32,9 +32,9 @@ export default class XinChat extends Component{
         <Scene key="root">
 
           <Scene key="hall" tabs tabBarStyle={css.tabbar} showLabel={false}  >
-            <Scene key="recent" component={RecentChat} title="信语XinChat" initial icon={()=><CustomTabIcon/>} iconName={'chat-message'}/>
-            <Scene key="list" component={MemberList} title="通讯录Contacts" icon={()=><CustomTabIcon/>} iconName={'chat-contacts'} />
-            <Scene key="me" component={AboutMe} title="我Me" icon={()=><CustomTabIcon/>} iconName={'chat-me'} />
+            <Scene key="recent" component={RecentChat} title="信语XinChat" initial icon={CustomTabIcon} iconName={'chat-message'}/>
+            <Scene key="list" component={MemberList} title="通讯录Contacts" icon={CustomTabIcon} iconName={'chat-contacts'} />
+            <Scene key="me" component={AboutMe} title="我Me" icon={CustomTabIcon} iconName={'chat-me'}/>
           </Scene>
           <Scene key="login" component={Login} title="登录Login" />
           <Scene key="register" component={Register} title="注册Register" />
@@ -52,3 +52,19 @@ const css = StyleSheet.create({
 
   tabbar: { backgroundColor:Colors.WHITE, borderTopColor:Colors.WHITE_GRAY},
 })
+
+
+
+
+
+//custom components
+// class CustomTabIcon extends Component {
+//   render(){
+//       var color = this.props.focused ? Colors.BTN_FOCUSED : Colors.BTN_UNFOCUSED;
+//       return(
+//         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center'}}>
+//           <CIcon color={color} name={this.props.iconName} size={this.props.iconName == 'chat-message' ? 34 : 30}/>
+//         </View>
+//       );
+//     }
+// }

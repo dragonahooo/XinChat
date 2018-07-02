@@ -1,11 +1,11 @@
 //import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import Button from 'react-native-button';
 import Colors from '../../utils/Colors';
 import { Actions } from 'react-native-router-flux';
 import { createIconSetFromFontello } from 'react-native-vector-icons';
 import fontelloConfig from '../../fontconfig.json';
-import Button from 'react-native-button';
 
 
 const CIcon = createIconSetFromFontello(fontelloConfig);
