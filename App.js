@@ -25,16 +25,16 @@ export default class XinChat extends Component{
       <Router backTitle=" " 
       tintColor={Colors.BTN_FOCUSED}
       navigationBarStyle={css.navbar} 
-      renderBackButton={<BackButton></BackButton>} 
-      renderRightButton={<MoreButton></MoreButton>}
+      renderBackButton={()=><BackButton/>} 
+      renderRightButton={()=><MoreButton/>}
       titleStyle={css.navtitle} 
       >
         <Scene key="root">
 
           <Scene key="hall" tabs tabBarStyle={css.tabbar} showLabel={false}  >
-            <Scene key="recent" component={RecentChat} title="信语XinChat" initial icon={<CustomTabIcon></CustomTabIcon>} iconName={'chat-message'}/>
-            <Scene key="list" component={MemberList} title="通讯录Contacts" icon={TabIcon} iconName={'chat-contacts'} />
-            <Scene key="me" component={AboutMe} title="我Me" icon={TabIcon} iconName={'chat-me'} />
+            <Scene key="recent" component={RecentChat} title="信语XinChat" initial icon={()=><CustomTabIcon/>} iconName={'chat-message'}/>
+            <Scene key="list" component={MemberList} title="通讯录Contacts" icon={()=><CustomTabIcon/>} iconName={'chat-contacts'} />
+            <Scene key="me" component={AboutMe} title="我Me" icon={()=><CustomTabIcon/>} iconName={'chat-me'} />
           </Scene>
           <Scene key="login" component={Login} title="登录Login" />
           <Scene key="register" component={Register} title="注册Register" />
