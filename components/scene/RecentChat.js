@@ -12,17 +12,17 @@ export default class RecentChat extends Component {
             <View style={css.container}>
                 <FlatList
                 data={[
-                    {userid:1, face:0, name:'Jacky', lastmsg:'JackyJackyJackyJackyJackyJacky', lasttime:1530528364, unreadcount:3},
-                    {userid:2, face:0, name:'Emily', lastmsg:'EmilyEmilyEmilyEmilyEmilyEmily', lasttime:1530528364, unreadcount:1},
-                    {userid:3, face:0, name:'Winston', lastmsg:'WinstonWinstonWinstonWinstonWinston', lasttime:1530528364, unreadcount:0},
-                    {userid:4, face:0, name:'Ben', lastmsg:'BenBenBenBenBenBenBenBenBen', lasttime:1530528364, unreadcount:0},
-                    {userid:5, face:0, name:'Tracy', lastmsg:'TracyTracyTracyTracyTracyTracyTracy', lasttime:1530528364, unreadcount:0},
-                    {userid:2, face:0, name:'Emily', lastmsg:'EmilyEmilyEmilyEmilyEmilyEmily', lasttime:1530528364, unreadcount:1},
-                    {userid:3, face:0, name:'Winston', lastmsg:'WinstonWinstonWinstonWinstonWinston', lasttime:1530528364, unreadcount:0},
-                    {userid:4, face:0, name:'Ben', lastmsg:'BenBenBenBenBenBenBenBenBen', lasttime:1530528364, unreadcount:0},
-                    {userid:2, face:0, name:'Emily', lastmsg:'EmilyEmilyEmilyEmilyEmilyEmily', lasttime:1530528364, unreadcount:1},
-                    {userid:3, face:0, name:'Winston', lastmsg:'WinstonWinstonWinstonWinstonWinston', lasttime:1530528364, unreadcount:0},
-                    {userid:4, face:0, name:'Ben', lastmsg:'BenBenBenBenBenBenBenBenBen', lasttime:1530528364, unreadcount:0},
+                    {userid:1, face:1, name:'Jacky', lastmsg:'JackyJackyJackyJackyJackyJacky', lasttime:1530528364, unreadcount:99},
+                    {userid:2, face:2, name:'Emily', lastmsg:'EmilyEmilyEmilyEmilyEmilyEmily', lasttime:1530528364, unreadcount:1},
+                    {userid:3, face:3, name:'Winston', lastmsg:'WinstonWinstonWinstonWinstonWinston', lasttime:1530528364, unreadcount:0},
+                    {userid:4, face:4, name:'Ben', lastmsg:'BenBenBenBenBenBenBenBenBen', lasttime:1530528364, unreadcount:0},
+                    {userid:5, face:5, name:'Tracy', lastmsg:'TracyTracyTracyTracyTracyTracyTracy', lasttime:1530528364, unreadcount:0},
+                    {userid:2, face:2, name:'Emily', lastmsg:'EmilyEmilyEmilyEmilyEmilyEmily', lasttime:1530528364, unreadcount:1},
+                    {userid:3, face:3, name:'Winston', lastmsg:'WinstonWinstonWinstonWinstonWinston', lasttime:1530528364, unreadcount:0},
+                    {userid:4, face:4, name:'Ben', lastmsg:'BenBenBenBenBenBenBenBenBen', lasttime:1530528364, unreadcount:0},
+                    {userid:2, face:2, name:'Emily', lastmsg:'EmilyEmilyEmilyEmilyEmilyEmily', lasttime:1530528364, unreadcount:1},
+                    {userid:3, face:3, name:'Winston', lastmsg:'WinstonWinstonWinstonWinstonWinston', lasttime:1530528364, unreadcount:0},
+                    {userid:4, face:4, name:'Ben', lastmsg:'BenBenBenBenBenBenBenBenBen', lasttime:1530528364, unreadcount:0},
                 ]}
                 extraData={this.state}
                 keyExtractor={this._keyExtractor}

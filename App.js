@@ -31,14 +31,14 @@ export default class XinChat extends Component{
       >
         <Scene key="root">
 
-          <Scene key="hall" tabs tabBarStyle={css.tabbar} showLabel={false}  >
+          <Scene key="hall" tabs tabBarStyle={css.tabbar} showLabel={false} initial >
             <Scene key="recent" component={RecentChat} title="信语XinChat" initial icon={CustomTabIcon} iconName={'chat-message'}/>
             <Scene key="list" component={MemberList} title="通讯录Contacts" icon={CustomTabIcon} iconName={'chat-contacts'} />
             <Scene key="me" component={AboutMe} title="我Me" icon={CustomTabIcon} iconName={'chat-me'}/>
           </Scene>
           <Scene key="login" component={Login} title="登录Login" />
           <Scene key="register" component={Register} title="注册Register" />
-          <Scene key="home" component={Home} title="信语XinChat" initial renderBackButton={()=><View/>} />
+          <Scene key="home" component={Home} title="信语XinChat" renderBackButton={()=><View/>} />
         </Scene>
 
       </Router>

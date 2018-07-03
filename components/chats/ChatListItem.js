@@ -8,7 +8,20 @@ export default class ChatListItem extends PureComponent {
         this.props.onPressItem(this.props.id);
       };
 
-   
+    imgIndex = [//require 加载本地图片 只能 使用整段string 不能拼接string， {uri:'http://1.jpg'}远程可以拼接
+        require('../../resources/face/face_r001.jpg'),
+        require('../../resources/face/face_r001.jpg'),
+        require('../../resources/face/face_r002.jpg'),
+        require('../../resources/face/face_r003.jpg'),
+        require('../../resources/face/face_r004.jpg'),
+        require('../../resources/face/face_r005.jpg'),
+        require('../../resources/face/face_r006.jpg'),
+        require('../../resources/face/face_r007.jpg'),
+        require('../../resources/face/face_r008.jpg'),
+        require('../../resources/face/face_r009.jpg'),
+        require('../../resources/face/face_r010.jpg'),
+    ]
+
     render(){
         return(
             <View key={this.props.id} onPress={this._onPress} stlye={css.container}>
@@ -20,7 +33,7 @@ export default class ChatListItem extends PureComponent {
                         <Text style={css.read}>{this.props.item.unreadcount > 0 ? this.props.item.unreadcount : ' '}</Text>
                     </View>
                 </View>
-                <View style={css.faceborder}><Image style={css.face}/></View>
+                <View style={css.faceborder}><Image style={css.face} source={ this.imgIndex[this.props.item.face]}/></View>
                 
             </View>
         );
